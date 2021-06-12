@@ -7,7 +7,7 @@ import (
 	"regexp"
 )
 
-func main() {
+func Expressoes() {
 	var AExpressaoRegular string
 	var AAlterarTexto string
 
@@ -54,4 +54,10 @@ func main() {
 
 	fmt.Println("Pressione 'Enter' para continuar...")
 	bufio.NewReader(os.Stdin).ReadBytes('\n')
+}
+
+func main() {
+	for {
+		Expressoes()
+	}
 }
